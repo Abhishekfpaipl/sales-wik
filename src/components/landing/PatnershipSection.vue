@@ -3,7 +3,7 @@
         <div class="container text-center my-5">
             <div class="py-2">
                 <h1 class="text-center">We Would like to Serve to All</h1>
-                <small>We are loved by all types of people across all industries</small>
+                <small class="text-capitalize">A simple <span class="text-uppercase">crm</span> that grows with your business</small>
             </div>
             <div class="row m-0 gy-2 text-center">
                 <div v-for="(text, index) in texts" :key="index" class="col-6 col-xl-4">
@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
 </template>
 <script>
@@ -21,50 +21,12 @@ export default {
     data() {
         return {
             texts: [
-                {
-                    // icon: 'bi bi-star',
-                    name: 'Freelancers',
-                },
-                {
-                    // icon: 'bi bi-building',
-                    name: 'Business',
-                },
-                {
-                    // icon: 'bi bi-shop-window',
-                    name: 'Students',
-                },
-                {
-                    // icon: 'bi bi-shop-window',
-                    name: 'Influencers',
-                },
-                {
-                    // icon: 'bi bi-shop-window',
-                    name: 'Politicians',
-                },
-                {
-                    // icon: 'bi bi-shop-window',
-                    name: 'Celebrities',
-                },
-                {
-                    // icon: 'bi bi-shop-window',
-                    name: 'Shopkeepers',
-                },
-                {
-                    // icon: 'bi bi-shop-window',
-                    name: 'Govt. Employee',
-                },
-                {
-                    // icon: 'bi bi-shop-window',
-                    name: 'Private Employee',
-                },
-                {
-                    // icon: 'bi bi-shop-window',
-                    name: 'Proffesional',
-                },
-                {
-                    // icon: 'bi bi-shop-window',
-                    name: 'Service Providers',
-                },
+                { name: 'Comprehensive pipeline management', },
+                { name: 'Workflow automation', },
+                { name: 'Full-fledged email communication', },
+                { name: 'Built-in telephony', },
+                { name: 'WhatsApp communication', },
+                { name: 'Customizable dashboards', },
             ]
         }
     }

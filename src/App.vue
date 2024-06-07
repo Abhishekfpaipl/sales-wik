@@ -1,6 +1,18 @@
 <template>
-  <router-view />
+  <TopNav />
+  <div class="" style="padding-top: 66px;">
+    <router-view />
+  </div>
 </template>
+<script>
+import TopNav from '@/components/landing/TopNav.vue'
+export default {
+  name: 'App',
+  components: {
+    TopNav
+  }
+}
+</script>
 
 <style>
 #app {

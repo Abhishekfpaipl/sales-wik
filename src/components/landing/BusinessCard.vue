@@ -3,8 +3,8 @@
         <h1 class="text-center pb-3">Advantanges of Digital Business <br>Cards over Paper Cards</h1>
         <div class="container">
             <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4">
-                <div class="col my-2" v-for="(advantage, index) in advantages" :key="index">
-                    <div class="card">
+                <div class="col border my-2" v-for="(advantage, index) in advantages" :key="index">
+                    <div class="">
                         <div class="card-header border-0 text-center bg-white">
                             <i class="bi text-primary fs-1" :class="advantage.icon"></i>
                         </div>

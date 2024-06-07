@@ -1,18 +1,13 @@
 <template>
-    <div class="containerr d-flex justify-content-between align-items-center" ref="topnav"
-        :style="`background:rgb(143,145,147, ${backgroundOpacity});`">
+    <div class="containerr d-flex justify-content-between align-items-center " ref="topnav"
+        :style="`background:rgb(245,245,245, ${backgroundOpacity});`">
         <div class="d-flex align-items-center gap-3">
             <router-link to="/" :class="{ 'hide-on-scroll': hideOnScroll }"
                 class="text-decoration-none text-dark d-flex align-items-center">
-                <img :src="`${publicPath}${img}`" style="width: 100px;object-fit: contain;">
+                <img :src="`${publicPath}${img}`" style="width: 50px;object-fit: contain;">
+                <span class="ms-2 fw-bold fs-4">Saleswity </span>
             </router-link>
         </div>
-        <!-- <div class="d-flex align-items-center gap-3">
-            <button class="btn btn-dark opacity-50 fs-4 rounded-circle" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <i class="bi bi-list fs-4"></i>
-            </button>
-        </div> -->
     </div>
 </template>
 
@@ -24,7 +19,7 @@ export default {
             publicPath: process.env.BASE_URL,
             img: "img/logo.png",
             backgroundOpacity: 0,
-            hideOnScroll: true,
+            hideOnScroll: true, 
         };
     },
     mounted() {
@@ -40,7 +35,7 @@ export default {
                 this.backgroundOpacity = 0.5;
                 this.hideOnScroll = true;
             } else if (scrollPercentage > 5) {
-                this.backgroundOpacity = 1;
+                this.backgroundOpacity = 1; 
                 this.hideOnScroll = false;
             } else {
                 this.backgroundOpacity = 0;
