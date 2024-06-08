@@ -15,11 +15,14 @@
         <div class="">
             <SucessSection />
         </div>
-        <div class="">
+        <!-- <div class="">
             <OurFeatures />
-        </div>
+        </div> -->
         <div class="">
             <MoveToSuccess />
+        </div>
+        <div class="">
+            <ImageWithText :title="title3" :description="description3" :image="image3" :points="true" />
         </div>
         <div class="">
             <LeadManagement />
@@ -32,10 +35,7 @@
         </div>
         <div class="">
             <ImageWithText :title="title1" :description="description1" :image="image1" :points="false" />
-        </div>
-        <div class="">
-            <ImageWithText :title="title3" :description="description3" :image="image3" :points="true" />
-        </div>
+        </div> 
         <div class="">
             <FaqSection />
         </div>
@@ -50,7 +50,7 @@ import SucessSection from '@/components/landing/SucessSection.vue'
 import CounterSection from '@/components/landing/CounterSection.vue'
 import FooterBar from '@/components/landing/FooterBar.vue'
 import TestSection from '@/components/landing/TestSection.vue'
-import OurFeatures from '@/components/landing/OurFeatures.vue'
+// import OurFeatures from '@/components/landing/OurFeatures.vue'
 import WayToShare from '@/components/landing/WayToShare.vue'
 import ImageWithText from '@/components/landing/ImageWithText.vue'
 // import DashboardNav from '@/components/DashboardNav.vue'
@@ -68,7 +68,7 @@ export default {
         CounterSection,
         FooterBar,
         TestSection,
-        OurFeatures,
+        // OurFeatures,
         WayToShare,
         ImageWithText,
         // DashboardNav,

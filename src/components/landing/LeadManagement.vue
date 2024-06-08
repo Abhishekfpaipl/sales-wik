@@ -3,20 +3,30 @@
         <div class="container">
             <h1 class="text-center text-capitalize mb-5">#1 Lead management software to automate your lead journey</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-                <div class="col card p-3" v-for="(lead, index) in leads" :key="index">
-                    <img :src="lead.image" class="card-img-top" alt="image" style="width: 48px;">
-                    <div class="card-body px-0">
-                        <h5 class="card-title text-start">{{ lead.title }}</h5>
-                        <p class="card-text text-start">{{ lead.description }}</p>
-                    </div>
+                <div class="col" v-for="(lead, index) in leads" :key="index">
+                    <!-- <div class="card p-3">
+                        <img :src="lead.image" class="card-img-top" alt="image" style="width: 48px;" >
+                        <div class="card-body px-0">
+                            <h5 class="card-title text-start">{{ lead.title }}</h5>
+                            <p class="card-text text-start">{{ lead.description }}</p>
+                        </div>
+                    </div>   -->
+                    <HoverCard :lead="lead" />
                 </div>
             </div>
+            <!-- <CardFlip  /> -->
         </div>
     </div>
 </template>
 <script>
+// import CardFlip from "@/components/landing/CardFlip.vue"
+import HoverCard from "@/components/HoverCard.vue"
 export default {
     name: "LeadManagement",
+    components: {
+        //  CardFlip ,
+        HoverCard
+    },
     data() {
         return {
             leads: [
@@ -56,7 +66,65 @@ export default {
                     title: "Real-time dashboards & reports",
                     description: "Over 135+ reports help you measure every piece of your process - from campaign spending to sales closure rates.",
                 },
-            ]
+                {
+                    id: 13,
+                    icon: 'bi-building',
+                    image: 'img/features/custom.png',
+                    title: 'Score leads',
+                    description: 'Qualify leads based on their region, behavior, and other parameters'
+                },
+                {
+                    id: 23,
+                    icon: 'bi-building',
+                    image: 'img/features/gear.png',
+                    title: 'Assign leads to the right rep',
+                    description: 'Get the right sales rep on the job based on customer preferences and other predefined criteria.'
+                },
+                {
+                    id: 54,
+                    icon: 'bi-building',
+                    image: 'img/features/uniform.png',
+                    title: 'Close deals quickly',
+                    description: "Generate invoices within CRM from prospect's record and update the deal stage and status."
+                },
+
+                {
+                    id: 72,
+                    icon: 'bi-building',
+                    image: 'img/features/block.png',
+                    title: 'Attach relevant details',
+                    description: 'Add notes, labels, or other documents to record in CRM.'
+                },
+
+                {
+                    id: 31,
+                    icon: 'bi-building',
+                    image: 'img/features/wallet.png',
+                    title: 'Automate activites',
+                    description: 'Create workflows for faster, erro-free communication and service.'
+                },
+                {
+                    id: 432,
+                    icon: 'bi-building',
+                    image: 'img/features/lead.png',
+                    title: 'lead capture',
+                    description: 'Get in touch with customers by using our contact form and sync their data with a CRM of your favour.'
+                },
+                {
+                    id: 623,
+                    icon: 'bi-building',
+                    image: 'img/features/users.png',
+                    title: 'User management',
+                    description: 'Invite all your team members, upload them by Excel/CSV or connect with Microsoft 365 or google workspace.'
+                },
+                {
+                    id: 823,
+                    icon: 'bi-building',
+                    title: 'Stay connected',
+                    image: 'img/features/data.png',
+                    description: 'Receive real-time notification about activities in CRM across devices.'
+                },
+            ],
         }
     }
 }

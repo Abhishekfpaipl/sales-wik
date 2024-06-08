@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="bg-danger py-5">
+        <div class="bg-danger p-5">
             <div class="d-flex justify-content-center">
                 <h1 class="text-white text-center">The numbers add up with SalesWik CRM</h1>
             </div>

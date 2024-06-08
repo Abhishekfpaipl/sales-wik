@@ -2,8 +2,9 @@
     <div>
         <div class="container text-center my-5">
             <div class="py-2">
-                <h1 class="text-center">We Would like to Serve to All</h1>
-                <small class="text-capitalize">A simple <span class="text-uppercase">crm</span> that grows with your business</small>
+                <h1 class="text-center">Features, that boost your attention!</h1>
+                <small class="text-capitalize">A simple <span class="text-uppercase">crm</span> that grows with your
+                    business</small>
             </div>
             <div class="row m-0 gy-2 text-center">
                 <div v-for="(text, index) in texts" :key="index" class="col-6 col-xl-4">

@@ -1,6 +1,6 @@
 <template>
     <div class="  my-3 py-3">
-        <div class="text-center pb-3">
+        <!-- <div class="text-center pb-3">
             <h1>The numbers add up with SalesWik CRM</h1>
             <div class="container my-3">
                 <div class="row row-cols-2 row-cols-md-4">
@@ -10,7 +10,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="container">
             <div class="row row-cols-2 row-cols-md-3 g-2">
                 <div class="col card" v-for="(feature, index) in features" :key="index">
