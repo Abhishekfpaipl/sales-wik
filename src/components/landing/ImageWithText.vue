@@ -1,7 +1,7 @@
 <template>
     <div class="my-3 py-3">
         <div class="container">
-            <div class="row d-flex align-items-center rounded-md-5 rounded-0 p-md-5 p-3" style="background-color: #F6F4FC;">
+            <div class="row d-flex align-items-center rounded-md-5 rounded-0 p-md-5 p-3 text-white" style="background-color: #09757A;">
                 <div class="col-12 col-md-6 text-center text-md-start">
                     <h1>{{ title }}</h1>
                     <p v-if="!points" class="my-2">{{ description }}</p>

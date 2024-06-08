@@ -1,10 +1,10 @@
 <template>
-    <div class="container position-relative w-100 d-flex justify-content-center align-items-center flex-fill">
+    <div class="position-relative w-100 d-flex justify-content-center align-items-center flex-fill">
         <div class="card position-relative w-100 bg-white p-3 d-flex flex-column">
             <div class="image">
                 <!-- <img src="https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg" alt="Card Image"> -->
-                <img :src="lead.image" style="width: 48px;" alt="Card Image">
-                <div class="fw-bold">{{ lead.title }}</div>
+                <img :src="lead.image" style="width: 32px;" alt="Card Image">
+                <span class="ms-2 fw-bold">{{ lead.title }}</span>
             </div>
             <div class="content">
                 <p>{{ lead.description }}</p>
