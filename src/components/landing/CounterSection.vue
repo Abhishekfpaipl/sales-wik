@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="p-5" style="background-color: #014c75;">
+        <div class="p-5" style="color: var(--bg-primary);">
             <div class="d-flex justify-content-center">
-                <h1 class="text-white text-center">The numbers add up with SalesWik CRM</h1>
+                <h1 class=" text-center">The numbers add up with SalesWik CRM</h1>
             </div>
-            <div class="text-white d-md-flex justify-content-between mt-4 ">
+            <div class="d-md-flex justify-content-between mt-4 ">
                 <div class="text-center fw-bold">
                     <p class="m-0 d-flex justify-content-center align-items-center" style="font-size: 50px;">
                         <AutoCounter :data="300"> </AutoCounter>&nbsp;%

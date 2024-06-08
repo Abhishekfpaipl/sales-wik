@@ -7,109 +7,45 @@
                     d="M377.941 169.941V216H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.568 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296h243.882v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.568 0-33.941l-86.059-86.059c-15.119-15.12-40.971-4.412-40.971 16.97z" />
             </svg>
         </button> -->
-        <h1 class="text-center mb-5">Millions of teams and professionals around the world trust Saleswik</h1>
+        <h1 class="text-center mb-5">SalesWik is loved by people across all industries</h1>
         <article :class="['wrapper', { 'wrapper--vertical': isVertical }]">
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <img :src="link.image"
-                        style="height:60px; width:175px;object-fit: contain;" alt=""> <span>{{link.name}}</span>
+                        <div class="rounded-circle p-3" style="background-color: var(--bg-primary);">
+                            <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)" alt="">
+                        </div>
+                        <span>{{ link.name }}</span>
                     </div>
-                    <!-- <img src="https://popl.co/cdn/shop/files/disney-logo_400x.png?v=1681411450"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/Compass_65738054-4331-4345-812f-f94873e75db0_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/Tesla__Inc.-Wordmark-Black-Logo.wine_02158900-a08d-4963-95f3-f05f66bce57f_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/mgm-logo_400x.webp?v=1689027252"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/Prudential_logo_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/salesforce_61aef24b-0672-426a-ba3c-a9945bcd7513_400x.png?v=1693232754"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/REMAX_New_2021_c61c609b-cec1-48ca-8e7e-8a4a35959b00_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/XMLID_1_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain" alt=""> -->
-                    <!-- Your SVG icons here -->
                 </div>
                 <div aria-hidden="true" class="marquee__group"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <img :src="link.image"
-                        style="height:60px; width:175px;object-fit: contain;" alt=""> <span>{{link.name}}</span>
+                        <div class="rounded-circle p-3" style="background-color: var(--bg-primary);">
+                            <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)" alt="">
+                        </div>
+                        <span>{{ link.name }}</span>
                     </div>
-                    <!-- <img src="https://popl.co/cdn/shop/files/uber-for-business-logo-vector_9e2de018-b147-4db2-bba9-943318bd0701_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/disney-logo_400x.png?v=1681411450"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/Compass_65738054-4331-4345-812f-f94873e75db0_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/Tesla__Inc.-Wordmark-Black-Logo.wine_02158900-a08d-4963-95f3-f05f66bce57f_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/mgm-logo_400x.webp?v=1689027252"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/Prudential_logo_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/salesforce_61aef24b-0672-426a-ba3c-a9945bcd7513_400x.png?v=1693232754"
-                        style="height:60px; width:175px object-fit: contain;;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/REMAX_New_2021_c61c609b-cec1-48ca-8e7e-8a4a35959b00_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/XMLID_1_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain;" alt=""> -->
-                    <!-- Your SVG icons here -->
                 </div>
             </div>
 
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <img :src="link.image"
-                        style="height:60px; width:175px;object-fit: contain;" alt=""> <span>{{link.name}}</span>
+                        <div class="rounded-circle p-3" style="background-color: var(--bg-primary);">
+                            <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)" alt="">
+                        </div>
+                        <span>{{ link.name }}</span>
                     </div>
-                    <!-- <img src="https://popl.co/cdn/shop/files/disney-logo_400x.png?v=1681411450"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/Compass_65738054-4331-4345-812f-f94873e75db0_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/Tesla__Inc.-Wordmark-Black-Logo.wine_02158900-a08d-4963-95f3-f05f66bce57f_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/mgm-logo_400x.webp?v=1689027252"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/Prudential_logo_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/salesforce_61aef24b-0672-426a-ba3c-a9945bcd7513_400x.png?v=1693232754"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/REMAX_New_2021_c61c609b-cec1-48ca-8e7e-8a4a35959b00_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain" alt="">
-                    <img src="https://popl.co/cdn/shop/files/XMLID_1_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain" alt=""> -->
-                    <!-- Your SVG icons here -->
                 </div>
                 <div aria-hidden="true" class="marquee__group"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <img :src="link.image"
-                        style="height:60px; width:175px;object-fit: contain;" alt=""> <span>{{link.name}}</span>
+                        <div class="rounded-circle p-3" style="background-color: var(--bg-primary);">
+                            <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)" alt="">
+                        </div>
+                        <span>{{ link.name }}</span>
                     </div>
-                    <!-- <img src="https://popl.co/cdn/shop/files/uber-for-business-logo-vector_9e2de018-b147-4db2-bba9-943318bd0701_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/disney-logo_400x.png?v=1681411450"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/Compass_65738054-4331-4345-812f-f94873e75db0_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/Tesla__Inc.-Wordmark-Black-Logo.wine_02158900-a08d-4963-95f3-f05f66bce57f_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/mgm-logo_400x.webp?v=1689027252"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/Prudential_logo_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/salesforce_61aef24b-0672-426a-ba3c-a9945bcd7513_400x.png?v=1693232754"
-                        style="height:60px; width:175px object-fit: contain;;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/REMAX_New_2021_c61c609b-cec1-48ca-8e7e-8a4a35959b00_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain;" alt="">
-                    <img src="https://popl.co/cdn/shop/files/XMLID_1_400x.png?v=1681184019"
-                        style="height:60px; width:175px; object-fit: contain;" alt=""> -->
-                    <!-- Your SVG icons here -->
                 </div>
             </div>
 
@@ -152,31 +88,46 @@ export default {
         return {
             isVertical: false,
             isReverse: false,
-            links:[
+            links: [
                 {
-                    id:1,
-                    name:'Real Estate',
-                    image:'https://www.groweon.com/images/inds-icon-1.png'
+                    id: 1,
+                    name: 'Digital Marketing',
+                    image: 'img/scroll/digi.svg'
                 },
                 {
-                    id:2,
-                    name:'Education',
-                    image:'https://www.groweon.com/images/inds-icon-2.png'
+                    id: 2,
+                    name: 'Education',
+                    image: 'img/scroll/education.svg'
                 },
                 {
-                    id:3,
-                    name:'Hospitality',
-                    image:'https://www.groweon.com/images/inds-icon-3.png'
+                    id: 3,
+                    name: 'Finance',
+                    image: 'img/scroll/finance.svg'
                 },
                 {
-                    id:4,
-                    name:'Digital Marketing',
-                    image:'https://www.groweon.com/images/inds-icon-4.png'
+                    id: 4,
+                    name: 'Healthcare',
+                    image: 'img/scroll/healthcare.svg'
                 },
                 {
-                    id:5,
-                    name:'Insurance',
-                    image:'https://www.groweon.com/images/inds-icon-5.png'
+                    id: 5,
+                    name: 'Hospitality',
+                    image: 'img/scroll/hospitality.svg'
+                },
+                {
+                    id: 6,
+                    name: 'Insurance',
+                    image: 'img/scroll/insurance.svg'
+                },
+                {
+                    id: 7,
+                    name: 'Real Estate',
+                    image: 'img/scroll/realestate.svg'
+                },
+                {
+                    id: 8,
+                    name: 'Service',
+                    image: 'img/scroll/service.svg'
                 },
             ]
         };

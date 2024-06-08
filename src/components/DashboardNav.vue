@@ -4,8 +4,11 @@
         <div class="d-flex align-items-center gap-3">
             <router-link to="/" :class="{ 'hide-on-scroll': hideOnScroll }"
                 class="text-decoration-none text-dark d-flex align-items-center">
-                <img :src="`${publicPath}${img}`" style="width: 50px;object-fit: contain;">
-                <span class="ms-2 fw-bold fs-4">Saleswity </span>
+                <img :src="`${publicPath}${img}`" style="width: 60px;object-fit: contain;">
+                <div class="d-flex flex-column">
+                    <span class="ms-2 fw-bold fs-4">Saleswik </span>
+                    <small class="smaller text-end text-muted" style="margin-top: -4px;">Let's Get Wicked</small>
+                </div>
             </router-link>
         </div>
     </div>
@@ -19,7 +22,7 @@ export default {
             publicPath: process.env.BASE_URL,
             img: "img/logo.png",
             backgroundOpacity: 0,
-            hideOnScroll: true, 
+            hideOnScroll: true,
         };
     },
     mounted() {
@@ -35,7 +38,7 @@ export default {
                 this.backgroundOpacity = 0.5;
                 this.hideOnScroll = true;
             } else if (scrollPercentage > 5) {
-                this.backgroundOpacity = 1; 
+                this.backgroundOpacity = 1;
                 this.hideOnScroll = false;
             } else {
                 this.backgroundOpacity = 0;

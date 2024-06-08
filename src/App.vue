@@ -1,15 +1,19 @@
 <template>
-  <TopNav />
-  <div class="" style="padding-top: 66px;">
+  <DashboardNav/>
+  <!-- <TopNav /> -->
+  <!-- <div class="" style="padding-top: 66px;"> -->
     <router-view />
-  </div>
+  <!-- </div> -->
 </template>
 <script>
-import TopNav from '@/components/landing/TopNav.vue'
+import DashboardNav from '@/components/DashboardNav.vue';
+
+// import TopNav from '@/components/landing/TopNav.vue'
 export default {
   name: 'App',
   components: {
-    TopNav
+    DashboardNav,
+    // TopNav
   }
 }
 </script>
@@ -21,5 +25,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+:root{
+  --bg-primary:#014c75;
+  --bg-secondary:#EB5E28;
+  --bg-tertiary:#FEC007;
+  --bg-forth:#FBF4F4;
+}
+.smaller{
+  font-size: 10px;
 }
 </style>

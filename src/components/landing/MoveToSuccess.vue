@@ -1,6 +1,6 @@
 <template>
     <div class="my-3 py-3">
-        <h1 class="text-center mb-5">We give you the moves you need to succeed</h1>
+        <h1 class="text-center mb-5">Why Choose Us</h1>
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-2">
                 <div v-for="(link, index) in links" :key="index" class="col d-flex justify-content-center">

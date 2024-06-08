@@ -1,16 +1,16 @@
 <template>
     <div class="my-3 py-3" >
-        <div class="container p-md-5 p-3" style="background-color: #F2F2F2;">
+        <div class="container p-md-5 p-3">
             <h1 class="text-center text-capitalize">Frequently asked questions</h1>
             <small>Take advantage of curated questions and answers frequently asked by the visitors & business.</small>
             <div class="row row-cols-1 row-cols-md-2 g-2 mt-5">
                 <div class="col" v-for="(question, index) in questions" :key="index">
-                    <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    :data-bs-target="'#collapseTwo' + question.id" aria-expanded="false"
-                                    :aria-controls="'collapseTwo' + question.id">
+                                <button class="accordion-button collapsed border-bottom fw-bold" type="button"
+                                    data-bs-toggle="collapse" :data-bs-target="'#collapseTwo' + question.id"
+                                    aria-expanded="false" :aria-controls="'collapseTwo' + question.id">
                                     {{ question.question }}
                                 </button>
                             </h2>
@@ -20,12 +20,12 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 </template>
+
 <script>
 export default {
     name: 'FaqSection',
@@ -67,6 +67,7 @@ export default {
     }
 }
 </script>
+
 <style>
 .accordion-button:not(.collapsed) {
     color: black !important;
@@ -75,6 +76,15 @@ export default {
 }
 
 .accordion {
-    --bs-accordion-btn-focus-box-shadow: none !important
+    --bs-accordion-btn-focus-box-shadow: none !important;
 }
+
+/* .accordion-button:not(.collapsed) {
+    background-color: var(--bg-primary) !important;
+    color:white !important 
+} 
+.accordion-collapse.show {
+    background-color: white;
+    color: black !important; 
+} */
 </style>
