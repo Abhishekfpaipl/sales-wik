@@ -1,8 +1,8 @@
 <template>
-  <DashboardNav/>
+  <DashboardNav />
   <!-- <TopNav /> -->
   <!-- <div class="" style="padding-top: 66px;"> -->
-    <router-view />
+  <router-view />
   <!-- </div> -->
 </template>
 <script>
@@ -14,7 +14,8 @@ export default {
   components: {
     DashboardNav,
     // TopNav
-  }
+  },
+ 
 }
 </script>
 
@@ -26,13 +27,15 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-:root{
-  --bg-primary:#014c75;
-  --bg-secondary:#EB5E28;
-  --bg-tertiary:#FEC007;
-  --bg-forth:#FBF4F4;
+
+:root {
+  --bg-primary: #014c75;
+  --bg-secondary: #EB5E28;
+  --bg-tertiary: #FEC007;
+  --bg-forth: #FBF4F4;
 }
-.smaller{
+
+.smaller {
   font-size: 10px;
 }
 </style>

@@ -41,7 +41,9 @@
         <div class="">
             <WayToShare />
         </div>
-
+        <div class="">
+            <PriceSection />
+        </div>
         <FooterBar />
     </div>
 </template>
@@ -61,6 +63,7 @@ import ImageWithText from '@/components/landing/ImageWithText.vue'
 import FaqSection from '@/components/landing/FaqSection.vue'
 import LeadManagement from '@/components/landing/LeadManagement.vue'
 import WhyChooseUs from '@/components/landing/WhyChooseUs.vue'
+import PriceSection from '@/components/landing/PriceSection.vue'
 export default {
     name: 'LandingPage',
     components: {
@@ -78,6 +81,7 @@ export default {
         FaqSection,
         LeadManagement,
         WhyChooseUs,
+        PriceSection,
         // TopNav,
     },
     data() {

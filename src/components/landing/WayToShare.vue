@@ -1,6 +1,6 @@
 <template>
     <div class="my-3 py-3">
-        <div class="text-center">
+        <div class="container text-center">
             <h1>So many ways to share</h1>
             <small>Your digital business card, your choice... <br> Saleswik provides you with the most sharing options on
                 the
