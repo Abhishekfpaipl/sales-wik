@@ -54,7 +54,11 @@ export default {
                 "Free support",
                 "Modern Interface",
                 "Easy Setup & Fast Adoption",
-            ]
+            ],
+            name: "",
+            email: "",
+            number: "",
+            businessName: "",
         }
     }
 }

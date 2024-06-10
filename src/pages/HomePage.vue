@@ -16,6 +16,9 @@
             <KycSection />
         </div>
         <div class="">
+            <SalesFunnel/>
+        </div>
+        <div class="">
             <SucessSection />
         </div>
         <!-- <div class="">
@@ -64,8 +67,9 @@ import FaqSection from '@/components/landing/FaqSection.vue'
 import LeadManagement from '@/components/landing/LeadManagement.vue'
 import WhyChooseUs from '@/components/landing/WhyChooseUs.vue'
 import PriceSection from '@/components/landing/PriceSection.vue'
+import SalesFunnel from '@/components/landing/SalesFunnel.vue'
 export default {
-    name: 'LandingPage',
+    name: 'HomePage',
     components: {
         Banner,
         KycSection,
@@ -82,6 +86,7 @@ export default {
         LeadManagement,
         WhyChooseUs,
         PriceSection,
+        SalesFunnel,
         // TopNav,
     },
     data() {
@@ -97,9 +102,6 @@ export default {
             title3: "Lead Automation & distribution",
             description3: "Leads are the lifeline of your business. The more leads you generate, the more leads you impress,and the more your business grows! Every business needs a streamlined system for acquiring,nurturing, and successfully converting leads.",
             image3: "https://cfw42.rabbitloader.xyz/eyJjIjp0cnVlLCJoIjoiY3JhdGlvY3JtLmNvbSIsInYiOjE4ODg5ODM4NDgsImkiOiI0YmM3Y2E5OS1mMWRiLTQ1ODctYTc1NS02MGJiYzE0NmE0MDAifQ/wp-content/uploads/2023/09/Funnel-Image.png",
-
-            title4: "Why Choose Us."
-
         }
     }
 }

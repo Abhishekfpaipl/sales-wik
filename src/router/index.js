@@ -1,26 +1,35 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
 
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: HomeView,
+    name: "HomePage",
+    component: () => import("@/pages/HomePage.vue"),
   },
   {
     path: "/privacy-policy",
     name: "privacy-policy",
-    component: () => import("@/views/PrivacyPolicy.vue"),
+    component: () => import("@/pages/PrivacyPolicy.vue"),
   },
   {
     path: "/term-of-use",
     name: "Term Of Use",
-    component: () => import("@/views/TermOfUse.vue"),
+    component: () => import("@/pages/TermOfUse.vue"),
   },
   {
     path: "/legal-warning",
     name: "Leagal Warning",
-    component: () => import("@/views/LegalWarning.vue"),
+    component: () => import("@/pages/LegalWarning.vue"),
+  },
+  {
+    path: "/demo-page1",
+    name: "DemoPage1",
+    component: () => import("@/pages/DemoPage1.vue"),
+  },
+  {
+    path: "/thank-you",
+    name: "ThankYou",
+    component: () => import("@/pages/ThankYou.vue"),
   },
 ];
 

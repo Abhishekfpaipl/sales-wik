@@ -1,5 +1,5 @@
 <template>
-  <DashboardNav />
+  <DashboardNav v-if="!hide"/>
   <!-- <TopNav /> -->
   <!-- <div class="" style="padding-top: 66px;"> -->
   <router-view />
@@ -15,7 +15,13 @@ export default {
     DashboardNav,
     // TopNav
   },
- 
+  computed: {
+    hide() {
+      const hiddenPages = ['DemoPage1','ThankYou']
+      return hiddenPages.includes(this.$route.name)
+    },
+  }
+
 }
 </script>
 
