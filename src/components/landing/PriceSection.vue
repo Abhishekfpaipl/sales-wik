@@ -35,7 +35,8 @@
                                             }}</button>
                                     </div>
                                     <ul v-if="plan.features" class="list-group">
-                                        <small class="text-start text-uppercase fw-bold my-2 text-primary">{{ plan.key }}</small>
+                                        <small class="text-start text-uppercase fw-bold my-2 text-primary">{{ plan.key
+                                            }}</small>
                                         <li v-for="(feature, featureIndex) in plan.features" :key="featureIndex"
                                             class="px-0 d-flex justify-content-between list-group-item text-start text-capitalize border-0">
                                             <div class="">
@@ -256,8 +257,8 @@ export default {
                             price: 0,
                             tag: "single user",
                             description: "Start with our free plan and upgrade only when you need additional features.",
-                            button: "Start free trial", 
-                            key:"key features",
+                            button: "Start free trial",
+                            key: "key features",
                             features: [
                                 {
                                     text: "single Pipelines",
@@ -439,10 +440,14 @@ export default {
 }
 
 .nav-link.active {
-    background-color: var(--bs-primary);
+    background-color: var(--bs-primary) !important;
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     transform: scale(1.2);
+}
+
+.nav-pills .nav-link.active{
+background-color: var(--bs-primary) !important;
 }
 
 /* Add any necessary styling here */

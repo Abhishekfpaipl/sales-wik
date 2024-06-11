@@ -12,7 +12,7 @@
                             <input type="text" class="form-control border-0 border-bottom rounded-0 px-2 bg-transparent" placeholder="Email" v-model="email" required>
                         </div>
                         <div class="w-100 mt-2">
-                            <input type="tel" class="form-control border-0 border-bottom rounded-0 px-2 bg-transparent" placeholder="Mobile No." v-model="number" required>
+                            <input type="number" class="form-control border-0 border-bottom rounded-0 px-2 bg-transparent" placeholder="Mobile No." v-model="number" required>
                         </div>
                         <div class="w-100 mt-2 mb-auto">
                             <textarea name="" class="form-control border-0 border-bottom rounded-0 px-2 bg-transparent" placeholder="Note." v-model="note"></textarea>

@@ -39,6 +39,9 @@
             <ImageWithText :title="title3" :description="description3" :image="image3" :points="true" />
         </div>
         <div class="">
+            <RequestDemo />
+        </div>
+        <div class="">
             <FaqSection />
         </div>
         <div class="">
@@ -68,6 +71,7 @@ import LeadManagement from '@/components/landing/LeadManagement.vue'
 import WhyChooseUs from '@/components/landing/WhyChooseUs.vue'
 import PriceSection from '@/components/landing/PriceSection.vue'
 import SalesFunnel from '@/components/landing/SalesFunnel.vue'
+import RequestDemo from '@/components/landing/RequestDemo.vue'
 export default {
     name: 'HomePage',
     components: {
@@ -87,6 +91,7 @@ export default {
         WhyChooseUs,
         PriceSection,
         SalesFunnel,
+        RequestDemo,
         // TopNav,
     },
     data() {
