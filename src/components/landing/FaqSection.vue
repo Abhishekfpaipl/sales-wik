@@ -1,5 +1,5 @@
 <template>
-    <div class="my-3 py-3" >
+    <div class="my-3 py-3" style="background-color: var(--bg-forth);">
         <div class="container p-md-5 p-3">
             <h1 class="text-center text-capitalize">Frequently asked questions</h1>
             <small>Take advantage of curated questions and answers frequently asked by the visitors & business.</small>

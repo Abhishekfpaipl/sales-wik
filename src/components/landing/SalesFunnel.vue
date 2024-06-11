@@ -1,19 +1,22 @@
 <template>
-    <div class="my-5 pb-5" style="background: linear-gradient(112deg, rgba(1,76,117,1) 0%, rgba(240,27,70,1) 100%);">
+    <div class="my-5 pb-5">
         <div class="container">
-            <h1 class="text-center py-5 text-capitalize text-white">sales funnel</h1>
+            <h1 class="text-center py-5 text-capitalize">sales funnel</h1>
             <div class="row m-0 gy-2 mb-4">
-                <div v-for="(demo, index) in demos" :key="index" class="col-12 col-lg-4">
-                    <div class="card p-3 ">
-                        <router-link :to="demo.link" class="text-decoration-none text-dark">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <i class="bi bi-play-circle fs-1"></i>
-                                <!-- <img :src="demo.img" width="120" class=""> -->
-                            </div>
-                            <h3 class=" text-center">{{ demo.head }}</h3>
-                            <p class="text-center w-100">{{ demo.text }}</p>
-                            <button class="btn btn-danger">Preview</button>
-                        </router-link>
+                <div class="col-12 col-md-6 align-self-center">
+                    <img src="/img/mobilecontent.svg" style="max-width: 80%; width: 250px;" alt="">
+                </div>
+                <div class="col-12 col-md-6 g-2 mt-5 mt-md-0">
+                    <div v-for="(demo, index) in demos" :key="index" class="col">
+                        <div class="border-bottom p-1 py-2 m-2">
+                            <router-link :to="demo.link"
+                                class="d-flex align-items-center justify-content-between text-decoration-none text-dark">
+                                <h5 class="text-center mb-0">{{ demo.head }}</h5>
+
+                                <button class="btn btn-danger"> <i class="bi bi-play"></i> Video</button>
+                                <button class="btn btn-danger"> <i class="bi bi-eye"></i> Preview</button>
+                            </router-link>
+                        </div>
                     </div>
                 </div>
             </div>

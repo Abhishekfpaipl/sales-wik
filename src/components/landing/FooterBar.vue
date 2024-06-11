@@ -44,6 +44,9 @@
                 <router-link to="/term-of-use" class="text-white" style="text-decoration: none;">
                     <p class="mb-2">Terms Of Use</p>
                 </router-link>
+                <router-link to="/career" class="text-white" style="text-decoration: none;">
+                    <p class="mb-2">Career</p>
+                </router-link>
             </div>
         </div>
         <div class="bg-light text-center py-3 d-flex align-items-center justify-content-center">

@@ -7,16 +7,29 @@
             <LeadManagement />
         </div>
         <div class="">
-            <ImageWithText :title="title1" :description="description1" :image="image1" :points="false" />
+            <RequestDemo />
         </div>
         <div class="">
-            <TestSection />
+            <WhyChooseUs />
         </div>
+        <!-- <div class="">
+            <ImageWithText :title="title1" :description="description1" :image="image1" :points="false" />
+        </div> -->
+
         <div class="">
             <KycSection />
         </div>
         <div class="">
-            <SalesFunnel/>
+            <PriceSection />
+        </div>
+        <div class="">
+            <ImageWithText :title="title3" :description="description3" :image="image3" :points="true" />
+        </div>
+        <div class="">
+            <SalesFunnel />
+        </div>
+        <div class="">
+            <CounterSection />
         </div>
         <div class="">
             <SucessSection />
@@ -27,29 +40,20 @@
         <!-- <div class="">
             <MoveToSuccess />
         </div> -->
+
         <div class="">
-            <WhyChooseUs />
+            <TestSection />
         </div>
 
 
-        <div class="">
-            <CounterSection />
-        </div>
-        <div class="">
-            <ImageWithText :title="title3" :description="description3" :image="image3" :points="true" />
-        </div>
-        <div class="">
-            <RequestDemo />
-        </div>
         <div class="">
             <FaqSection />
         </div>
         <div class="">
             <WayToShare />
         </div>
-        <div class="">
-            <PriceSection />
-        </div>
+
+
         <FooterBar />
     </div>
 </template>
@@ -98,7 +102,7 @@ export default {
         return {
             title1: "Why do you need a lead management system?",
             description1: "Leads are the lifeline of your business. The more leads you generate, the more leads you impress,and the more your business grows! Every business needs a streamlined system for acquiring,nurturing, and successfully converting leads.",
-            image1: "img/light.png",
+            image1: "img/whychoose.svg",
 
             title2: "You do the hard Work.We just want to help out in our small way.",
             description2: "Registered non-profit organizations are eligible for a 50% discount on Twist",

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="p-5" style="color: var(--bg-primary);">
+        <div class="p-5" style="background-color: var(--bg-forth);">
             <div class="d-flex justify-content-center">
                 <h1 class=" text-center">The numbers add up with SalesWik CRM</h1>
             </div>

@@ -1,14 +1,32 @@
 <template>
     <div class="containerr d-flex justify-content-between align-items-center " ref="topnav"
-        :style="`background:rgb(245,245,245, ${backgroundOpacity});`">
+        :style="`background:rgb(1,76,117, ${backgroundOpacity});`">
         <div class="d-flex align-items-center gap-3">
             <router-link to="/" :class="{ 'hide-on-scroll': hideOnScroll }"
                 class="text-decoration-none text-dark d-flex align-items-center">
-                <img :src="`${publicPath}${img}`" style="width: 60px;object-fit: contain;">
+                <img :src="`${publicPath}${img}`" style="width: 60px;object-fit: contain;filter: invert(1)">
                 <div class="d-flex flex-column">
-                    <span class="ms-2 fw-bold fs-4">Saleswik </span>
-                    <small class="smaller text-end text-muted" style="margin-top: -4px;">Let's Get Wicked</small>
+                    <span class="ms-2 fw-bold fs-4 text-white">Saleswik </span>
+                    <small class="smaller text-end text-white" style="margin-top: -4px;">Let's Get Wicked</small>
                 </div>
+            </router-link>
+        </div>
+        <div class="d-none d-md-flex align-items-center gap-3" :class="{ 'hide-on-scroll': hideOnScroll }">
+            <router-link to="/contact-us" class="p-2 text-white text-decoration-none">
+                <i class="bi bi-whatsapp fs-5"></i>
+                <span class="ms-2 fw-bold">Contact Sales</span>
+            </router-link>
+            <router-link to="/login-page" class="btn btn-danger rounded-pill">
+                <i class="bi bi-person fs-5"></i>
+                <span class="ms-2">Login / Register</span>
+            </router-link>
+        </div>
+        <div class="d-flex d-md-none align-items-center gap-3" :class="{ 'hide-on-scroll': hideOnScroll }">
+            <router-link to="/contact-us" class="p-2 text-white">
+                <i class="bi bi-whatsapp fs-5"></i>
+            </router-link>
+            <router-link to="/login-page" class="text-decoration-none text-white">
+                <i class="bi bi-person fs-5 text-white"></i>
             </router-link>
         </div>
     </div>
