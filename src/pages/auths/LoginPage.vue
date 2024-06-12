@@ -65,11 +65,7 @@ export default {
     },
     methods: {
         loginAccount() {
-            const postData = {
-                email: this.email,
-                password: this.password
-            }
-            this.$store.dispatch('LoggedInUserStore/loginUser', postData)
+           console.log('hello')
         },
         togglePasswordVisibility(fieldId) {
             this.showPassword = !this.showPassword;

@@ -1,5 +1,5 @@
 <template>
-  <DashboardNav v-if="!hide"/>
+  <DashboardNav v-if="!hide" />
   <!-- <TopNav /> -->
   <!-- <div class="" style="padding-top: 66px;"> -->
   <router-view />
@@ -17,7 +17,7 @@ export default {
   },
   computed: {
     hide() {
-      const hiddenPages = ['DemoPage1','ThankYou']
+      const hiddenPages = ['DemoPage1', 'ThankYou', 'LoginPage', 'RegistrationPage']
       return hiddenPages.includes(this.$route.name)
     },
   }
@@ -43,5 +43,39 @@ export default {
 
 .smaller {
   font-size: 10px;
+}
+
+.cutout {
+  overflow: hidden;
+  text-align: center;
+}
+
+.cutout>span {
+  position: relative;
+  display: inline-block;
+}
+
+.cutout>span:before,
+.cutout>span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 900px;
+  /* Adjust width as needed */
+  margin: 0 20px;
+}
+
+.cutout>span:before {
+  right: 100%;
+  border-bottom: 2px solid;
+  border-color: var(--bg-secondary);
+  border-image-slice: 1;
+}
+
+.cutout>span:after {
+  left: 100%;
+  border-bottom: 2px solid;
+  border-color: var(--bg-secondary);
+  border-image-slice: 1;
 }
 </style>

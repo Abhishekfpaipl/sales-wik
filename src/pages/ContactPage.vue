@@ -1,133 +1,167 @@
 <template>
-    <div class="position-absolute w-100">
-        <div class="" style="background-color: var(--bg-primary);">
-            <p class="fs-1 text-center text-white fw-bold py-5">Contact Page</p>
+    <div class="">
+        <div class="text-white py-5" style="background-color: var(--bg-primary); padding-bottom: 6rem !important;">
+            <h1 class="text-center mb-0 fw-bold">Contact Page</h1>
+            <small class="text-capitalize">The secret of getting ahead, is getting started</small>
         </div>
-        <div class="container d-flex flex-fill px-5 my-5">
-            <p class="py-3 fs-5" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Iste expedita optio distinctio
-                blanditiis iure ad
-                recusandae veritatis explicabo! Dolorem repudiandae quaerat voluptatum sapiente debitis, porro commodi
-                recusandae voluptatem impedit perspiciatis voluptates earum quasi magnam distinctio architecto, illum
-                hic
-                unde doloribus officia, eum ad labore. Ab ea omnis quisquam tempora obcaecati reprehenderit officia in
-                consequuntur, quis explicabo saepe quos beatae, perferendis amet enim nemo nostrum commodi possimus
-                aspernatur iste eius assumenda quasi similique eos. Eveniet repellat nostrum mollitia hic ad explicabo
-                officiis. Nisi aliquid laudantium esse placeat velit voluptatem debitis, tenetur, corporis animi in
-                dicta
-                deleniti. Beatae fugit soluta inventore voluptatibus odit facere quisquam ipsa ratione autem? Officiis
-                rem
-                aperiam, quibusdam explicabo corporis non temporibus velit necessitatibus. Quas eveniet minima numquam
-                dicta
-                dignissimos error, nulla commodi earum tempora obcaecati inventore animi qui temporibus, dolore unde.
-                Deleniti eveniet odit quos voluptate doloribus nam quibusdam pariatur sapiente odio vitae quae esse
-                assumenda vel obcaecati, ea fuga accusantium perspiciatis reiciendis quo? Animi vitae nostrum eum
-                asperiores
-                vel, delectus magnam dolorem ea dignissimos sed, doloribus voluptatibus molestiae quis quaerat facilis
-                consequatur eaque reiciendis rerum eos tenetur autem. Nisi, laudantium. Consequatur mollitia inventore
-                corporis obcaecati reprehenderit soluta praesentium voluptatem eligendi nesciunt cumque sit dolores
-                dolorum
-                incidunt, ab in expedita iure. Cupiditate praesentium vel saepe rem magnam culpa, omnis, nam voluptatum
-                ipsam voluptatem aut optio quam deserunt aperiam sint eum voluptate sapiente nobis corporis quia
-                architecto?
-                Sapiente nisi exercitationem quibusdam harum quidem explicabo id, sit in debitis optio aut atque magnam
-                sint
-                maxime cupiditate excepturi, a cum temporibus, qui sed eveniet ea error? Doloribus consectetur veritatis
-                expedita culpa quisquam excepturi error nam autem quia. Possimus facilis blanditiis, beatae nulla at
-                provident ratione odit doloribus sapiente quae fugit explicabo excepturi aspernatur impedit. Omnis
-                libero
-                necessitatibus hic aspernatur quos ea facilis explicabo eaque, quibusdam autem aliquid recusandae, ipsam
-                minima. Saepe quibusdam dolorum exercitationem officiis excepturi sapiente suscipit sunt nesciunt sint
-                necessitatibus est nulla ipsam quis, fugiat vel repellat vero. Aliquid totam temporibus possimus rem
-                cupiditate consequuntur, pariatur, repellendus dolorem molestias nam praesentium nemo sint laboriosam
-                non
-                reprehenderit sunt excepturi corrupti porro nisi, nesciunt est facilis laudantium ullam necessitatibus?
-                Commodi dolores consectetur illo sequi, dignissimos quam accusantium mollitia alias officiis voluptatum,
-                ducimus est perferendis officia accusamus voluptate. Facere pariatur magnam at asperiores? A ad possimus
-                reprehenderit non. Doloribus provident sequi in numquam accusamus eius amet quibusdam cupiditate totam
-                quo
-                eligendi quam labore ullam, repellendus placeat reprehenderit ratione? Error amet obcaecati ab beatae
-                quis.
-                Asperiores neque similique provident optio fuga aliquid, non facere rerum veniam voluptas tenetur quam
-                minima sunt qui omnis aliquam, beatae vitae maxime expedita eligendi voluptatem? Sunt fuga nesciunt,
-                numquam
-                veniam iusto quia tempora culpa rerum accusantium veritatis ipsam temporibus at similique ullam! Qui
-                omnis
-                pariatur at cum mollitia in illo ipsa sequi, ab ullam voluptas non adipisci numquam iure nostrum quis.
-                Iste
-                explicabo consequuntur tenetur illo, alias repellendus, error quae est debitis labore perferendis natus
-                blanditiis vero asperiores saepe aliquam similique ad voluptates mollitia ratione perspiciatis animi ut!
-                Ratione eligendi omnis dolorum ipsa quaerat sint? Quas voluptas vel iusto fugiat ullam eum ab autem
-                ipsum
-                aliquid, sunt a quidem nesciunt repudiandae ad magni! Ipsum ipsam asperiores natus consequatur incidunt
-                non
-                molestiae in nobis consequuntur quo repellat accusamus deserunt quis rem rerum, quisquam aut, optio
-                debitis
-                necessitatibus odio. Asperiores beatae provident dolorum maiores cum? Voluptates ut itaque iste eaque
-                cum
-                aliquid officia dicta, nesciunt quis voluptatem numquam dolorum consectetur repudiandae? Dolorem alias
-                laboriosam temporibus nemo aliquid neque pariatur consequuntur quidem quibusdam dolore rerum voluptas
-                iste
-                commodi non error maxime tempore illum nisi sint iure maiores, reprehenderit consectetur! Accusamus ea
-                voluptatem assumenda sapiente exercitationem excepturi, quibusdam illo? Perspiciatis neque beatae fugiat
-                nobis voluptates at minus deserunt natus rerum minima nesciunt, laudantium incidunt iste possimus
-                suscipit
-                tenetur sapiente dolore repellat. Aliquam ducimus molestias veniam animi amet rem quisquam minus libero
-                consequatur suscipit, debitis distinctio, qui in mollitia vel. Expedita eligendi libero voluptatum eaque
-                non
-                distinctio aut atque itaque doloremque neque vitae voluptatibus modi sapiente soluta omnis accusantium
-                impedit tempora repellendus placeat, hic porro excepturi doloribus? Molestias nam id, perspiciatis
-                tempora
-                asperiores, distinctio quisquam illum sit ut harum aliquam explicabo iste accusamus quos! Vel fugiat ea
-                eveniet dolor, laudantium impedit. Autem eligendi architecto mollitia deserunt quod quidem
-                exercitationem
-                iure, sint nam quaerat rem, voluptate quae necessitatibus libero dicta veniam? Id vero ea perferendis
-                architecto molestiae aperiam tempora, dicta ex itaque nihil, quae, commodi est! Omnis distinctio
-                veritatis
-                placeat nemo quo eveniet porro, dolores tempore dignissimos deserunt obcaecati quod, et non temporibus
-                qui
-                repudiandae ex incidunt minima dolore in provident. Ut similique quasi aliquam, beatae repellendus,
-                quaerat
-                ipsam distinctio eum architecto, tempore consequuntur optio accusantium? Officiis, tempora quas vero
-                sequi
-                itaque ut modi laboriosam doloribus, delectus beatae dignissimos quod accusantium nam nulla voluptatibus
-                voluptate, saepe fugiat aut quis adipisci. Tenetur excepturi, quisquam officia aspernatur officiis quia
-                recusandae maxime nisi nemo nulla, eaque dignissimos ex dolorum repellat. Voluptas suscipit, culpa
-                architecto quam perferendis, repellat labore voluptate cumque velit ea eligendi, modi quae officiis
-                quasi
-                accusantium iusto aliquid reprehenderit! Pariatur nam ut praesentium perferendis asperiores accusantium
-                laboriosam delectus labore molestias quaerat repellat eum aut nisi, nihil voluptatem nesciunt placeat
-                numquam vero quisquam facere sed velit. Consectetur atque perspiciatis blanditiis consequatur vero
-                tempore,
-                maxime laudantium. Rem tenetur dicta mollitia voluptatum nostrum dolores ratione! Voluptatum sunt
-                numquam
-                aspernatur magni enim incidunt voluptates ipsum, voluptatem reprehenderit dolores accusamus dolorum
-                temporibus qui animi, pariatur, minus aperiam optio nobis saepe est. Tempore magni ipsum voluptates
-                veritatis accusamus dolorem necessitatibus blanditiis nihil corrupti numquam quam vitae explicabo, sit
-                fugiat facere iure eum nobis earum tempora distinctio? Officiis quisquam pariatur aut, voluptatum
-                provident
-                at eaque voluptatem vitae incidunt quos, id ipsam ad veniam earum cupiditate minus adipisci officia nemo
-                vel
-                repudiandae odit facilis facere corporis. Aliquid eum natus quia earum tempora, qui vero in fugiat
-                libero
-                enim cupiditate voluptatem consequuntur magnam. Voluptates illo autem, magnam harum sapiente alias
-                repudiandae quos tempora eaque dicta officia dolorem, earum architecto. Tempora cumque quod ipsa nihil,
-                facere delectus accusamus tenetur suscipit? Exercitationem dicta minima obcaecati laborum adipisci in
-                eos
-                aliquid quisquam quibusdam maxime! Animi, ipsum!</p>
+        <div class="container bg-white rounded-top-5" style="margin-top: -40px;">
+            <div class="row p-3">
+                <div class="col-12 col-md-6 pt-4">
+                    <form @submit.prevent="loginAccount()">
+                        <div class="p-2 form-floating">
+                            <input type="text" class="form-control" placeholder="First Name" v-model="mobile">
+                            <label for="floatingInput" class="ms-2 text-muted">First Name</label>
+                        </div>
+                        <div class="p-2 form-floating">
+                            <input type="text" class="form-control" placeholder="Business Name" v-model="email">
+                            <label for="floatingInput" class="ms-2 text-muted">Business Name</label>
+                        </div>
+                        <div class="p-2 form-floating">
+                            <input type="number" class="form-control" placeholder="Phone No." v-model="number">
+                            <label for="floatingInput" class="ms-2 text-muted">Phone No</label>
+                        </div>
+                        <div class="p-2 form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                                v-model="note"></textarea>
+                            <label for="floatingTextarea" class="ms-2 text-muted">Notes</label>
+                        </div>
+                        <button class="btn btn-danger text-capitalize">send message</button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 mt-5 mt-md-0 pt-4" style="color: var(--bg-primary) !important;">
+                    <h1 class="text-uppercase my-3">We Believe</h1>
+                    <p class="text-capitalize fs-5 fw-bold">"If you don't take care of your customers, <br> your
+                        competitors
+                        will do!"</p>
+                    <h1 class="text-uppercase cutout my-3"><span>So Relax </span></h1>
+                    <p class="text-capitalize fs-5 fw-bold">"let's build an awesome business together <br>We will take
+                        care of
+                        you !"</p>
+                </div>
+
+            </div>
         </div>
-        <div class="w-100 position-relative bottom-0">
-            <FooterBar />
+        <div class="container-fluid mt-5 py-5" style="background-color: var(--bg-forth);">
+            <div class="row">
+                <h1 class="text-uppercase mb-4">Need to get in touch with us?</h1>
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="img/contactus.svg" style="width: 500px; max-width: 80%;" alt="">
+                </div>
+                <div class="col-12 col-md-6 mt-5 mt-md-0 ">
+                    <div class="row row-cols-1">
+                        <div v-for="(icon, index) in contact" :key="index" class="col py-2"
+                            @click="handleIconClick(icon.action)">
+                            <div class="d-flex justify-content-center align-items-center border p-2 ">
+                                <a class="text-white" :href="icon.url" target="_blank">
+                                    <i :class="icon.icon" :style="'color:' + icon.color"></i>
+                                </a>
+                                <p class="text-start ms-2 fw-bold mb-0">{{ icon.name }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container my-5">
+
+            <h1 class="text-capitalize my-5">Follow us on</h1>
+            <div class="row row-cols-4">
+                <div v-for="(contact, index) in folows" :key="index" class="col py-2">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="rounded-circle border d-flex align-items-center justify-content-center"
+                            style="width: 60px; height: 60px;">
+                            <a class="text-white" :href="contact.url" target="_blank">
+                                <i :class="contact.icon" :style="'color:' + contact.color"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-center mt-2 fw-bold">{{ contact.name }}</p>
+                </div>
+            </div>
         </div>
     </div>
+    <FooterBar />
 </template>
 
 <script>
 import FooterBar from '@/components/landing/FooterBar.vue';
 
 export default {
-    name:"ContactPage",
-    components: { FooterBar }
+    name: "ContactPage",
+    components: { FooterBar },
+    data() {
+        return {
+            contact: [
+                { name: 'support@covisor.in', icon: 'bi-envelope fs-3', color: 'red', action: 'openEmail' },
+                { name: '8860012001', icon: 'bi-telephone-fill fs-3', color: 'black', action: 'openDialer' },
+                // { name: 'Business', icon: 'bi-building fs-5', action: '' },
+                { name: '8860012001', icon: 'bi-whatsapp fs-3', color: 'green', action: 'openWhatsapp' },
+                { name: 'Block B1/632, Janakpuri, Delhi', icon: 'bi-geo-fill fs-3', color: 'black', action: 'openMaps' },
+                // { name: 'Query', icon: 'bi-question-circle fs-5', action: 'openQuery' },
+            ],
+            folows: [
+                {
+                    icon: 'bi bi-facebook fs-3',
+                    name: 'Facebook',
+                    color: 'blue',
+                    url: 'https://www.facebook.com/yourpage'
+                },
+                {
+                    icon: 'bi bi-twitter-x fs-3',
+                    name: 'Twitter',
+                    color: 'black',
+                    url: 'https://www.instagram.com/yourprofile'
+                },
+                {
+                    icon: 'bi bi-youtube fs-3',
+                    name: 'YouTube',
+                    color: 'red',
+                    url: 'https://www.youtube.com/'
+                },
+                {
+                    icon: 'bi bi-linkedin fs-3',
+                    name: 'LinkedIn',
+                    color: 'blue',
+                    url: 'https://www.linkedin.com/in/yourprofile'
+                },
+            ],
+            mobile: '',
+            email: '',
+            number: '',
+            note: '',
+        }
+    },
+    methods: {
+        loginAccount() {
+            console.log(this.mobile, this.email, this.number, this.note)
+        }
+    }
 }
 </script>
- 
+
+<style scoped>
+.so-relax {
+    position: relative;
+    text-align: center;
+    /* margin: 20px 0; */
+}
+
+.so-relax::before,
+.so-relax::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: black;
+}
+
+.so-relax::before {
+    left: 0;
+}
+
+.so-relax::after {
+    right: 0;
+}
+</style>

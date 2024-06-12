@@ -12,11 +12,11 @@
                 <form @submit.prevent="forgotPassword()">
                     <div class="w-100 p-2 form-floating">
                         <input type="email" class="form-control" placeholder="Email" v-model="email" required>
-                        <label for="floatingInput" class="text-muted">Email Id.</label>
+                        <label for="floatingInput" class="ms-2 text-muted">Email Id.</label>
                     </div>
                     <div class="d-flex justify-content-center align-items-center w-100 px-2 mt-2">
                         <button type="submit" class="btn text-white py-2 fs-5 w-100"
-                            style="padding: 10px 12px !important;background-color: var(--secondary-color);">Submit</button>
+                            style="padding: 10px 12px !important;background-color: var(--bg-primary);">Submit</button>
                     </div>
                 </form>
                 <div class="text-center container my-3">

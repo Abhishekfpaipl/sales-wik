@@ -29,9 +29,7 @@
         </div>
     </div>
 </template>
-<script>
-// import CardFlip from "@/components/landing/CardFlip.vue"
-// import HoverCard from "@/components/HoverCard.vue"
+<script> 
 export default {
     name: "LeadManagement",
     components: {
@@ -260,5 +258,20 @@ export default {
     .container .card .image {
         max-width: 100%;
     }
+} */
+
+/* @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 1.5s ease-in-out;
 } */
 </style>

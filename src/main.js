@@ -3,5 +3,16 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
+import observe from "./directives/v-observe.js";
 
-createApp(App).use(store).use(router).mount("#app");
+// Create the app instance
+const app = createApp(App);
+
+// Register the custom directive
+app.directive('observe', observe);
+
+// Use router and store
+app.use(store).use(router);
+
+// Mount the app
+app.mount("#app");

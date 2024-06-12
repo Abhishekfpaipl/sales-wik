@@ -34,7 +34,7 @@
                     </div>
                 </form>
                 <div class="text-center container my-3">
-                    <p>By proceeding, you agree to <RouterLink to="/">Terms & Conditions</RouterLink> & <RouterLink
+                    <p>By proceeding, you agree to <RouterLink to="/term-of-use">Terms & Conditions</RouterLink> & <RouterLink
                             to="/">
                             Privacy policy</RouterLink>
                     </p>

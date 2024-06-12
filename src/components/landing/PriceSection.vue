@@ -440,15 +440,13 @@ export default {
 }
 
 .nav-link.active {
-    background-color: var(--bs-primary) !important;
+    background-color: var(--bg-primary) !important;
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     transform: scale(1.2);
 }
 
-.nav-pills .nav-link.active{
-background-color: var(--bs-primary) !important;
-}
+ 
 
 /* Add any necessary styling here */
 </style>

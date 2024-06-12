@@ -1,87 +1,73 @@
 <template>
     <div>
-        <div class="w-100">
-            <TopNav></TopNav>
-            <div class="text-center fw-bold py-5 text-white" style="background-color: var(--bg-primary);">
-                <p class="fs-1 mb-0">Career</p>
-                <p class="fs-5">LOOKING FOR A CAREER, JOIN US !</p>
-            </div>
-            <div class="d-md-flex align-items-start d-bolck gap-3 container my-5">
+        <div class="text-center fw-bold py-5 text-white" style="background-color: var(--bg-primary);">
+            <p class="fs-1 mb-0">Career</p>
+            <p class="fs-5">LOOKING FOR A CAREER, JOIN US !</p>
+        </div>
+        <div class="container py-5 rounded-top-5 bg-white" style="margin-top: -40px;">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <form @submit.prevent="loginAccount()">
+                        <div class="p-2 form-floating">
+                            <input type="text" class="form-control" placeholder="First Name" v-model="mobile">
+                            <label for="floatingInput" class="ms-2 text-muted">First Name</label>
+                        </div>
+                        <div class="p-2 form-floating">
+                            <input type="text" class="form-control" placeholder="Business Name" v-model="email">
+                            <label for="floatingInput" class="ms-2 text-muted">Business Name</label>
+                        </div>
+                        <div class="p-2 form-floating">
+                            <input type="number" class="form-control" placeholder="Phone No." v-model="number">
+                            <label for="floatingInput" class="ms-2 text-muted">Phone No</label>
+                        </div>
+                        <div class="p-2 form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                                v-model="note"></textarea>
+                            <label for="floatingTextarea" class="ms-2 text-muted">Notes</label>
+                        </div>
+                        <button class="btn btn-danger text-capitalize">send message</button>
+                    </form>
+                </div>
                 <div class="col-12 col-md-6">
                     <div class="row">
                         <div v-for="(data, index) in works" :key="index" class="col-12">
-                            <div class="d-flex border p-2 py-3 mb-3" style="height: 110px;">
-                                <div class="border p-3 me-3">
+                            <div class="d-flex align-items-center border my-2">
+                                <div class="p-3">
                                     <i :class="data.icon"></i>
                                 </div>
-                                <div class="ms-2">
-                                    <span class="fw-bold">{{ data.heading }}</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 bg-light border pb-3">
-                    <form class="p-3 pb-0 py">
-                        <div class="d-md-flex d-block justify-content-between">
-                            <div class="mb-3 w-100 px-1">
-                                <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1">
-                            </div>
-                            <div class="mb-3 w-100 px-1">
-                                <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-                                <input type="number" class="form-control" id="exampleFormControlInput1">
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Position</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100 mb-3 mt-2">Apply For Job</button>
-                    </form>
-
-                </div>
-            </div>
-
-            <div class=" bg-dark text-white py-5" style="opacity: 60%;">
-                <h3 class="text-center ">Our Core Values</h3>
-                <p class="text-center container">
-                    One thing that we've tried to keep consistent through all these years is our core set of values and
-                    beliefs.
-                    They have helped us get to where we are today, and they guide us as we grow. We inculcate these
-                    values
-                    in
-                    everything we do - from the littlest of things to the biggest of decisions.
-                </p>
-            </div>
-            <div class="container my-5">
-                <div class="p-2 row">
-                    <div v-for="(data, index) in datas" :key="index" class="col-12 col-md-6 g-3">
-                        <div class="d-flex align-items-center border p-2">
-                            <img :src="data.icon" :alt="data.name" style="width: 8%; filter: grayscale(1);"
-                                class="mx-3">
-                            <div class=" ms-2">
                                 <span class="fw-bold">{{ data.heading }}</span>
-                                <p>{{ data.text }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="w-100 position-relative bottom-0">
-                <FooterBar />
             </div>
         </div>
+
+        <div class="text-white py-5" style="background-color: var(--bg-primary);">
+            <h3 class="text-center ">Our Core Values</h3>
+            <p class="text-center container">
+                One thing that we've tried to keep consistent through all these years is our core set of values and
+                beliefs.
+                They have helped us get to where we are today, and they guide us as we grow. We inculcate these
+                values
+                in
+                everything we do - from the littlest of things to the biggest of decisions.
+            </p>
+        </div>
+        <div class="container my-5">
+            <div class="p-2 row">
+                <div v-for="(data, index) in datas" :key="index" class="col-12 col-md-6 g-3">
+                    <div class="d-flex align-items-center border p-2">
+                        <img :src="data.icon" :alt="data.name" style="width: 8%; filter: grayscale(1);" class="mx-3">
+                        <div class=" ms-2">
+                            <span class="fw-bold">{{ data.heading }}</span>
+                            <p>{{ data.text }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <FooterBar />
 
     </div>
 </template>
@@ -90,7 +76,7 @@
 import FooterBar from '@/components/landing/FooterBar.vue'
 export default {
     name: 'CareerPage',
-    components:{
+    components: {
         FooterBar
     },
     data() {
@@ -144,7 +130,16 @@ export default {
                     icon: 'bi bi-diagram-2 fs-3',
                     heading: 'Equal Opportunities'
                 },
-            ]
+            ],
+            mobile: '',
+            email: '',
+            number: '',
+            note: ''
+        }
+    },
+    methods: {
+        loginAccount() {
+            console.log(this.mobile, this.email, this.number, this.note)
         }
     }
 

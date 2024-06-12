@@ -2,37 +2,37 @@
     <div class="">
         <!-- <DashboardNav /> -->
         <!-- <TopNav /> -->
-        <Banner />
+        <Banner v-observe />
         <div class="" id="second">
-            <LeadManagement />
+            <LeadManagement v-observe />
         </div>
         <div class="">
-            <RequestDemo />
+            <RequestDemo v-observe />
         </div>
         <div class="">
-            <WhyChooseUs />
+            <WhyChooseUs v-observe />
         </div>
         <!-- <div class="">
             <ImageWithText :title="title1" :description="description1" :image="image1" :points="false" />
         </div> -->
 
         <div class="">
-            <KycSection />
+            <KycSection v-observe />
         </div>
         <div class="">
-            <PriceSection />
+            <PriceSection v-observe />
         </div>
         <div class="">
-            <ImageWithText :title="title3" :description="description3" :image="image3" :points="true" />
+            <ImageWithText :title="title3" :description="description3" :image="image3" :points="true" v-observe />
         </div>
         <div class="">
-            <SalesFunnel />
+            <SalesFunnel v-observe />
         </div>
         <div class="">
-            <CounterSection />
+            <CounterSection v-observe />
         </div>
         <div class="">
-            <SucessSection />
+            <SucessSection v-observe />
         </div>
         <!-- <div class="">
             <OurFeatures />
@@ -42,21 +42,22 @@
         </div> -->
 
         <div class="">
-            <TestSection />
+            <TestSection v-observe />
         </div>
 
 
         <div class="">
-            <FaqSection />
+            <FaqSection v-observe />
         </div>
         <div class="">
-            <WayToShare />
+            <WayToShare v-observe />
         </div>
 
 
-        <FooterBar />
+        <FooterBar v-observe />
     </div>
 </template>
+
 <script>
 import Banner from '@/components/landing/Banner.vue'
 import KycSection from '@/components/landing/KycSection.vue'
@@ -76,6 +77,7 @@ import WhyChooseUs from '@/components/landing/WhyChooseUs.vue'
 import PriceSection from '@/components/landing/PriceSection.vue'
 import SalesFunnel from '@/components/landing/SalesFunnel.vue'
 import RequestDemo from '@/components/landing/RequestDemo.vue'
+
 export default {
     name: 'HomePage',
     components: {
@@ -115,4 +117,17 @@ export default {
     }
 }
 </script>
-<style></style>
+
+<style>
+/* You can put the CSS classes here too */
+.before-enter {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.enter {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>

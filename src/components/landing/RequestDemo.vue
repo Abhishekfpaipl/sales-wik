@@ -36,8 +36,8 @@
                             <label class="ms-2 text-muted">Business Name.</label>
                         </div>
                         <div class="w-100 form-floating mt-2">
-                            <textarea class="form-control" placeholder="Leave a comment here"
-                                id="floatingTextarea" v-model="note"></textarea>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                                v-model="note"></textarea>
                             <label for="floatingTextarea" class="ms-2 text-muted">Notes.</label>
                         </div>
 
@@ -72,6 +72,19 @@ export default {
     }
 }
 </script>
-<style lang="">
+<style scoped>
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+.container {
+    animation: fadeIn 1.5s ease-in-out;
+}
 </style>
